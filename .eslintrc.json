@@ -1,0 +1,26 @@
+{
+  "parserOptions": {
+  "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+    "jsx": true
+  }
+},
+  "settings": {"react": {"pragma": "React", "version": "detect"}},
+  "extends": [
+  "eslint:recommended",
+  "eslint-config-prettier",
+  "plugin:react/recommended"
+  ],
+  "rules": {
+  "strict": ["error", "never"],
+    "react/prop-types": "warn",
+    "no-unused-vars": "warn",
+    "react/display-name": "warn",
+    "react/jsx-key": "warn",
+    "no-import-assign": "warn"
+},
+  "plugins": ["react"],
+  "parser": "@babel/eslint-parser",
+  "env": {"browser": true, "node": true, "jest": true}
+}
